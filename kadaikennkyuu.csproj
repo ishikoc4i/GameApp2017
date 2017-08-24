@@ -141,7 +141,7 @@
     <Compile Include="Assets\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
-    <Compile Include="Assets\SceneLoadScript.cs" />
+    <Compile Include="Assets\Scriputo\SceneLoadScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ICE_sushishop\Shader\Glass.shader" />
