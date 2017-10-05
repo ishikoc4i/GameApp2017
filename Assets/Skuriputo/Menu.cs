@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
 
     private GameObject scrollRect;
     public GameObject Image;
+    public GameObject ContlloleImage;
     public GameObject canvasObject;
 
     // Use this for initialization
@@ -20,11 +21,20 @@ public class Menu : MonoBehaviour
         Image = this.gameObject.transform.Find("Image").gameObject;
         Image.SetActive(false);
 
+        ContlloleImage = this.gameObject.transform.Find("ContlloleImage").gameObject;
+        ContlloleImage.SetActive(true);
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.anyKeyDown)
+        {
+            ContlloleImage.SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             scrollRect.SetActive(!scrollRect.activeSelf);
