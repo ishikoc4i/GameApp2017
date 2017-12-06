@@ -156,6 +156,10 @@ public class ItemGet : MonoBehaviour
 
                 }
                 
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    ReadImage1.SetActive(false);
+                }
 
                 if (hit.collider.name == "ElectricalBook1")
                 {
@@ -163,6 +167,11 @@ public class ItemGet : MonoBehaviour
                     ReadImage.SetActive(false);
                     ReadImage2.SetActive(!ReadImage2.activeSelf);
 
+                }
+
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    ReadImage2.SetActive(false);
                 }
 
                 if (hit.collider.name == "ElectricalBook2")
@@ -173,7 +182,12 @@ public class ItemGet : MonoBehaviour
 
                 }
 
-                if (hit.collider.name == "ElectricalBook2")
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    ReadImage3.SetActive(false);
+                }
+
+                if (hit.collider.name == "ElectricalBook3")
                 {
                     ReadImage = GameObject.Find("Canvas").gameObject.transform.Find("ReadImage").gameObject;
                     ReadImage.SetActive(false);
@@ -181,7 +195,10 @@ public class ItemGet : MonoBehaviour
 
                 }
 
-
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    ReadImage4.SetActive(false);
+                }
 
             }
         }

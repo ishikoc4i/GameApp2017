@@ -35,6 +35,11 @@ public class Menu : MonoBehaviour
             ContlloleImage.SetActive(false);
         }
 
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ContlloleImage.SetActive(!ContlloleImage.activeSelf);
+        }
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             scrollRect.SetActive(!scrollRect.activeSelf);

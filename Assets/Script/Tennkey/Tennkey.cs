@@ -17,7 +17,7 @@ public class Tennkey : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Pannel = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
-        Pannel.SetActive(false);
+        Pannel.SetActive(true);
 
     }
 
@@ -27,8 +27,9 @@ public class Tennkey : MonoBehaviour {
     void Update () {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            Pannel = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
             Pannel.SetActive(!Pannel.activeSelf);
-            Pannel.SetActive(true);
+           // Pannel.SetActive(true);
 
 
         }
