@@ -28,7 +28,7 @@ public class Button : MonoBehaviour {
 
     public void OnButtonClick1()
     {
-        Debug.Log("Click");
+       
 
         if (ClickCaunt1 == 0)
         {

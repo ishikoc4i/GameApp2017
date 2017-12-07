@@ -19,8 +19,9 @@ public class ButtonNode : MonoBehaviour
     public void Initialize(string buttonString, Text DetailText)
     {
 
-        this.buttonText.text = buttonString;
+        this.buttonText.text = buttonString ;
         this.DetailText = DetailText;
+
     }
 
     public void OnButtonClick()
@@ -28,7 +29,7 @@ public class ButtonNode : MonoBehaviour
         
         
         DetailText.text = buttonText.text;
-
+        
     }
 
     public void SetImg(string imgName)

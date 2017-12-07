@@ -10,18 +10,19 @@ public class NodeManager : MonoBehaviour
     public GameObject content;
     int count;
     int k;
-
-    
+    int Chemicalsbottle;
 
     string[] itemlist = new string[] { "itemicon", "itemicon2", "itemicon3", "itemicon4", "itemicon3"};
-    string[] buttonString = new string[] { "錆びた鍵\n\n\n所持数" , "エタノール\n\n\n所持数", "棚の鍵\n\n\n所持数", "電池\n\n\n所持数", "昇降口の鍵\n\n\n所持数" };
+    string[] buttonString = new string[] { "錆びた鍵\n\n\nさび付いた鍵。このままでは何にも使えない" , "エタノール\n\n\n何かに使えそう。", "棚の鍵\n\n\n棚の鍵。どこかの棚を開けられる", "電池\n\n\nただの電池。まだ使えそうだ。", "昇降口の鍵\n\n\n昇降口の鍵" };
     
+
 
     void Start()
     {
+
         renderItems();
         
-   
+
     }
 
     void renderItems()
@@ -37,7 +38,10 @@ public class NodeManager : MonoBehaviour
 
             buttonNode.Initialize(buttonString[i], DetailText);
             buttonNode.SetImg(itemlist[i]);
-            
+           
+
         }
     }
+
+    
 }
