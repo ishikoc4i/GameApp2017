@@ -153,6 +153,7 @@
     <Compile Include="Assets\Script\Door\Door2.cs" />
     <Compile Include="Assets\Script\Door\Door3.cs" />
     <Compile Include="Assets\Script\Door\Door4.cs" />
+    <Compile Include="Assets\Script\Door\Syoukouguti_1.cs" />
     <Compile Include="Assets\Script\GameCler.cs" />
     <Compile Include="Assets\Script\GetKyeHyouzi.cs" />
     <Compile Include="Assets\Script\ItemGet.cs" />

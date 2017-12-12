@@ -8,6 +8,8 @@ public class Button : MonoBehaviour {
 
     public GameObject screen1;
     static int ClickCaunt = 0;
+    static bool k = false;
+    static bool i = false;
     
 
     // Use this for initialization
@@ -327,6 +329,7 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            k = true;
         }
 
         else if (ClickCaunt == 3)
@@ -416,18 +419,25 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字0");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            i = true;
         }
     }
 
-   /* public void OnButtonClick_ok()
+    public void OnButtonClick_ok()
     {
    
-        if (ClickCaunt0 == 4 && ClickCaunt8 == 3)
+        if (k == true && i == true)
         {
-            
+            GameObject Door = GameObject.Find("Tobira").gameObject;
+            Quaternion q = Quaternion.Euler(0f, 0f, 90f);
+            Door.transform.rotation = q;
+            Vector3 v = Door.transform.localPosition;
+            v.z -= 2.3f;
+            Door.transform.localPosition = v;
+            //count = false;
         }
 
-    }*/
+    }
 
     public void OnButtonClick_cancel()
     {

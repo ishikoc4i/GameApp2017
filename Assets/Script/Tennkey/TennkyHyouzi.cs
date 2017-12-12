@@ -21,18 +21,11 @@ public class TennkyHyouzi : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
 
-            Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
-            Image.AddComponent<Image>().sprite = Resources.Load<Sprite>("素材１２");
+            //Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
+            //Image.AddComponent<Image>().sprite = Resources.Load<Sprite>("素材１２");
 
             Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
-
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-
-                Tennkey.SetActive(true);
-
-
-            }
+            Tennkey.SetActive(true);
 
         }
 
@@ -43,10 +36,14 @@ public class TennkyHyouzi : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
+
+        
+
         if (other.gameObject.CompareTag("Player"))
         {
-            Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
-            Image.SetActive(false);
+            //Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
+            //Image.SetActive(false);
+            Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
             Tennkey.SetActive(false);
 
         }

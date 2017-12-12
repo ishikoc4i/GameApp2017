@@ -10,6 +10,7 @@ public class Menu : MonoBehaviour
     public GameObject Image;
     public GameObject ContlloleImage;
     public GameObject canvasObject;
+    public GameObject Pannel;
 
     // Use this for initialization
     void Start()
@@ -23,7 +24,10 @@ public class Menu : MonoBehaviour
 
         ContlloleImage = this.gameObject.transform.Find("ContlloleImage").gameObject;
         ContlloleImage.SetActive(true);
-        
+
+        Pannel = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
+        Pannel.SetActive(false);
+
 
     }
 
@@ -44,6 +48,11 @@ public class Menu : MonoBehaviour
         {
             scrollRect.SetActive(!scrollRect.activeSelf);
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Pannel.SetActive(!Pannel.activeSelf);
         }
     }
 
