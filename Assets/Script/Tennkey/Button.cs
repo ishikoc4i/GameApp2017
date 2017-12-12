@@ -7,18 +7,8 @@ public class Button : MonoBehaviour {
 
 
     public GameObject screen1;
-    static int ClickCaunt1 = 0;
-    static int ClickCaunt2 = 0;
-    static int ClickCaunt3 = 0;
-    static int ClickCaunt4 = 0;
-    static int ClickCaunt5 = 0;
-    static int ClickCaunt6 = 0;
-    static int ClickCaunt7 = 0;
-    static int ClickCaunt8 = 0;
-    static int ClickCaunt9 = 0;
-    static int ClickCaunt0 = 0;
-    static int ClickCaunt_ok = 0;
-    static int ClickCaunt_cancel = 0;
+    static int ClickCaunt = 0;
+    
 
     // Use this for initialization
     void Start () {
@@ -30,80 +20,80 @@ public class Button : MonoBehaviour {
     {
        
 
-        if (ClickCaunt1 == 0)
+        if (ClickCaunt == 0 )
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt1++;
+            ClickCaunt++;
         }
         
-        else if (ClickCaunt1 == 1)
+        else if (ClickCaunt== 1 )
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt1++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt1 == 2)
+        else if (ClickCaunt == 2 )
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt1++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt1 == 3)
+        else if (ClickCaunt == 3 )
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt1++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick2()
     {
        
-        if (ClickCaunt2 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字2");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt2++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt2 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字2");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt2++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt2 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字2");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt2++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt2 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字2");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt2++;
+            ClickCaunt++;
         }
     }
 
@@ -111,120 +101,120 @@ public class Button : MonoBehaviour {
     {
         
 
-        if (ClickCaunt3 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字3");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt3++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt3 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字3");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt3++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt3 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字3");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt3++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt3 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字3");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt3++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick4()
     {
       
-        if (ClickCaunt4 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字4");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt4++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt4 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字4");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt4++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt4 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字4");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt4++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt4 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字4");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt4++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick5()
     {
         
-        if (ClickCaunt5 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字5");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt5++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt5 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字5");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt5++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt5 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字5");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt5++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt5 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字5");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt5++;
+            ClickCaunt++;
         }
     }
 
@@ -232,200 +222,200 @@ public class Button : MonoBehaviour {
     {
        
 
-        if (ClickCaunt6 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字6");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt6++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt6 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字6");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt6++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt6 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字6");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt6++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt6 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字6");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt6++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick7()
     {
 
-        if (ClickCaunt7 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字7");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt7++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt7 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字7");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt7++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt7 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字7");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt7++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt7 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字7");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt7++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick8()
     {
       
-        if (ClickCaunt8 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt8++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt8 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt8++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt8 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt8++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt8 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt8++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick9()
     {
 
-        if (ClickCaunt9 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字9");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt9++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt9 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字9");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt9++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt9 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字9");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt9++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt9== 3)
+        else if (ClickCaunt== 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字9");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt9++;
+            ClickCaunt++;
         }
     }
 
     public void OnButtonClick0()
     {
   
-        if (ClickCaunt0 == 0)
+        if (ClickCaunt == 0)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen1").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字0");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt0++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt0 == 1)
+        else if (ClickCaunt == 1)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen2").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字0");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt0++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt0 == 2)
+        else if (ClickCaunt == 2)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen3").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字0");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt0++;
+            ClickCaunt++;
         }
 
-        else if (ClickCaunt0 == 3)
+        else if (ClickCaunt == 3)
         {
             screen1 = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject.transform.Find("screen").gameObject.transform.Find("screen4").gameObject;
             screen1.GetComponent<RectTransform>().localScale = new Vector3(1.5f, 0.7f, 1);
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字0");
             screen1.GetComponent<Image>().SetNativeSize();
-            ClickCaunt0++;
+            ClickCaunt++;
         }
     }
 
@@ -441,16 +431,8 @@ public class Button : MonoBehaviour {
 
     public void OnButtonClick_cancel()
     {
-        ClickCaunt0 = 0;
-        ClickCaunt1 = 0;
-        ClickCaunt2 = 0;
-        ClickCaunt3 = 0;
-        ClickCaunt4 = 0;
-        ClickCaunt5 = 0;
-        ClickCaunt6 = 0;
-        ClickCaunt7 = 0;
-        ClickCaunt8 = 0;
-        ClickCaunt9 = 0;
+        ClickCaunt = 0;
+       
     }
 
     // Update is called once per frame
