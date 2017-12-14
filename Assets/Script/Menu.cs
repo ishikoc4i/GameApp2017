@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour
     public GameObject ContlloleImage;
     public GameObject canvasObject;
     public GameObject Pannel;
+    
 
     // Use this for initialization
     void Start()
@@ -28,7 +29,9 @@ public class Menu : MonoBehaviour
         Pannel = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
         Pannel.SetActive(false);
 
+        
 
+        
     }
 
     // Update is called once per frame
@@ -46,14 +49,12 @@ public class Menu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+           
             scrollRect.SetActive(!scrollRect.activeSelf);
 
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Pannel.SetActive(!Pannel.activeSelf);
-        }
+     
     }
 
 

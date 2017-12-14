@@ -17,6 +17,9 @@ public class Syoukouguti_1 : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
+            int Hoistwaykey = ItemGet.Hoistwaykey;
+
+           
 
             if (count == true)
             {
@@ -29,7 +32,18 @@ public class Syoukouguti_1 : MonoBehaviour
                 count = false;
             }
 
+           
 
+            if (Hoistwaykey == 1 && count == false)
+            {
+                GameObject Door = GameObject.Find("genkan door (1)").gameObject;
+                Quaternion q = Quaternion.Euler(0f, 100f, 0f);
+                Door.transform.rotation = q;
+                Vector3 v = Door.transform.localPosition;
+                v.z -= 1.7f;
+                Door.transform.localPosition = v;
+                count = true;
+            }
         }
 
        

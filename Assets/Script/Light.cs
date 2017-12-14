@@ -6,18 +6,24 @@ using UnityEngine;
 
 public class Light : MonoBehaviour {
     public GameObject Pointlight;
+    public GameObject ki;
 
     // Use this for initialization
     void Start () {
+        Pointlight = GameObject.Find("Sutanndo").gameObject.transform.Find("Point light").gameObject;
         Pointlight.SetActive(false);
+        ki = GameObject.Find("ki").gameObject;
+        ki.SetActive(false);
 	}
 	
-	// Update is called once per frame
-	/*void Update () {
-        if (ItemGet.puragu == true && ItemGet.dennkyuu == true && ItemGet.Key == true && ItemGet.kouguBako == true)
+	 
+	void Update () {
+       //int battery = ItemGet.battery;
+        if (Input.GetKeyDown(KeyCode.H) )
         {
             Pointlight.SetActive(true);
+            ki.SetActive(true);
         }
 
-    }*/
+    }
 }

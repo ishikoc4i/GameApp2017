@@ -442,6 +442,8 @@ public class Button : MonoBehaviour {
     public void OnButtonClick_cancel()
     {
         ClickCaunt = 0;
+        k = false;
+        i = false;
        
     }
 
