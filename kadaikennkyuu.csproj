@@ -152,14 +152,15 @@
     <Compile Include="Assets\Script\Door\Door.cs" />
     <Compile Include="Assets\Script\Door\Door2.cs" />
     <Compile Include="Assets\Script\Door\Door3.cs" />
-    <Compile Include="Assets\Script\Door\Door4.cs" />
     <Compile Include="Assets\Script\Door\Syoukouguti_1.cs" />
     <Compile Include="Assets\Script\GameCler.cs" />
     <Compile Include="Assets\Script\GetKyeHyouzi.cs" />
     <Compile Include="Assets\Script\ItemGet.cs" />
     <Compile Include="Assets\Script\ItemRisut\ButtonNode.cs" />
     <Compile Include="Assets\Script\ItemRisut\NodeManager.cs" />
+    <Compile Include="Assets\Script\Kaihei.cs" />
     <Compile Include="Assets\Script\Light.cs" />
+    <Compile Include="Assets\Script\Light_kirikae.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\ReadKey.cs" />
     <Compile Include="Assets\Script\SceneLoadScript.cs" />

@@ -5,20 +5,22 @@ using UnityEngine;
 public class Syoukouguti_1 : MonoBehaviour
 {
     public static bool count = true;
+    public int Hoistwaykey;
 
     // Use this for initialization
     void Start()
     {
-
+       
     }
 
     void OnTriggerEnter(Collider other)
     {
+         Hoistwaykey = ItemGet.Hoistwaykey;
 
         if (other.gameObject.CompareTag("Player"))
         {
-            int Hoistwaykey = ItemGet.Hoistwaykey;
 
+            
            
 
             if (count == true)
@@ -53,7 +55,5 @@ public class Syoukouguti_1 : MonoBehaviour
     void Update()
     {
 
-        //countTime += Time.deltaTime;
-        //Debug.Log(countTime.ToString("F2"));
     }
 }

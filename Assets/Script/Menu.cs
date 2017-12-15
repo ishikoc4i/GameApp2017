@@ -11,6 +11,10 @@ public class Menu : MonoBehaviour
     public GameObject ContlloleImage;
     public GameObject canvasObject;
     public GameObject Pannel;
+    public GameObject SenntakuPaneru;
+    public int Chemicalsbottle;
+    public int Rustedkey;
+    public int ChemicalBook;
     
 
     // Use this for initialization
@@ -29,7 +33,8 @@ public class Menu : MonoBehaviour
         Pannel = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
         Pannel.SetActive(false);
 
-        
+        SenntakuPaneru = GameObject.Find("Canvas").gameObject.transform.Find("SenntakuPaneru").gameObject;
+        SenntakuPaneru.SetActive(false);
 
         
     }
@@ -37,7 +42,13 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown)
+        
+        Chemicalsbottle = ItemGet.Chemicalsbottle;
+        Rustedkey = ItemGet.Rustedkey;
+        ChemicalBook = ItemGet.ChemicalBook;
+
+
+        if (Input.anyKeyDown)
         {
             ContlloleImage.SetActive(false);
         }
@@ -51,6 +62,12 @@ public class Menu : MonoBehaviour
         {
            
             scrollRect.SetActive(!scrollRect.activeSelf);
+
+            if (Chemicalsbottle == 1 && Rustedkey == 1 &&ChemicalBook == 1 )
+            {
+                SenntakuPaneru.SetActive(!SenntakuPaneru.activeSelf);
+                
+            }
 
         }
 

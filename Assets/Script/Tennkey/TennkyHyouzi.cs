@@ -17,15 +17,16 @@ public class TennkyHyouzi : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
+        int j = Button.j;
 
         if (other.gameObject.CompareTag("Player"))
         {
+            if(j == 0){
 
-            //Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
-            //Image.AddComponent<Image>().sprite = Resources.Load<Sprite>("素材１２");
+                Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
+                Tennkey.SetActive(true);
 
-            Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
-            Tennkey.SetActive(true);
+            }
 
         }
 
@@ -41,8 +42,7 @@ public class TennkyHyouzi : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Player"))
         {
-            //Image = GameObject.Find("Canvas").gameObject.transform.Find("Image").gameObject;
-            //Image.SetActive(false);
+            
             Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
             Tennkey.SetActive(false);
 

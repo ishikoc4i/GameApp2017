@@ -6,26 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class GameCler : MonoBehaviour
 {
-    
 
+    public int Hoistwaykey;
 
     public void OnTriggerEnter(Collider other)
-       {
+    {
 
+        Hoistwaykey = ItemGet.Hoistwaykey;
             if (other.gameObject.CompareTag("Player"))
             {
                
 
-            if (ItemGet.Hoistwaykey == 1)
+            if (Hoistwaykey == 1)
                 {
                     SceneManager.LoadScene("clear");
-                    Debug.Log("Gamecler");
+                    
 
                 }
             }
 
-       }
-       
-           
+    }
+
     
+
 }

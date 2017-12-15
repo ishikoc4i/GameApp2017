@@ -26,9 +26,9 @@ public class ItemGet : MonoBehaviour
     public static int battery = 0;
     public static int Rustedkey = 0;
     public static int Hoistwaykey = 0;
-    public static int shelfkey = 0;
+   // public static int shelfkey = 0;
+    public static int ChemicalBook = 0;
 
-    
 
 
     // Use this for initialization
@@ -78,6 +78,36 @@ public class ItemGet : MonoBehaviour
         Readimage4.GetComponent<Image>().SetNativeSize();
         ReadImage4 = GameObject.Find("Canvas").gameObject.transform.Find("ReadImage4").gameObject;
         ReadImage4.SetActive(false);
+
+        GameObject GetImage = new GameObject("GetImage");
+        GetImage.transform.parent = GameObject.Find("Canvas").transform;
+        GetImage.AddComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
+        GetImage.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        GetImage.AddComponent<Image>().sprite = Resources.Load<Sprite>("tsnakey.Get");
+        GetImage.GetComponent<Image>().preserveAspect = true;
+        GetImage.GetComponent<Image>().SetNativeSize();
+        GetImage = GameObject.Find("Canvas").gameObject.transform.Find("GetImage").gameObject;
+        GetImage.SetActive(false);
+
+        GameObject KaiheiImage = new GameObject("KaiheiImage");
+        KaiheiImage.transform.parent = GameObject.Find("Canvas").transform;
+        KaiheiImage.AddComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
+        KaiheiImage.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        KaiheiImage.AddComponent<Image>().sprite = Resources.Load<Sprite>("Hiraku");
+        KaiheiImage.GetComponent<Image>().preserveAspect = true;
+        KaiheiImage.GetComponent<Image>().SetNativeSize();
+        KaiheiImage = GameObject.Find("Canvas").gameObject.transform.Find("KaiheiImage").gameObject;
+        KaiheiImage.SetActive(false);
+
+        GameObject LightImage = new GameObject("LightImage");
+        LightImage.transform.parent = GameObject.Find("Canvas").transform;
+        LightImage.AddComponent<RectTransform>().anchoredPosition = new Vector3(0, 0, 0);
+        LightImage.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        LightImage.AddComponent<Image>().sprite = Resources.Load<Sprite>("Tyousa");
+        LightImage.GetComponent<Image>().preserveAspect = true;
+        LightImage.GetComponent<Image>().SetNativeSize();
+        LightImage = GameObject.Find("Canvas").gameObject.transform.Find("LightImage").gameObject;
+        LightImage.SetActive(false);
 
 
     }
@@ -136,10 +166,10 @@ public class ItemGet : MonoBehaviour
                     Hoistwaykey = 1;
                 }
 
-                if (Chemicalsbottle == 1 && Rustedkey == 1)
+               /* if (Chemicalsbottle == 1 && Rustedkey == 1)
                 {
                     shelfkey = 1;
-                }
+                }*/
 
 
 
@@ -153,7 +183,7 @@ public class ItemGet : MonoBehaviour
                     ReadImage = GameObject.Find("Canvas").gameObject.transform.Find("ReadImage").gameObject;
                     ReadImage.SetActive(false);
                     ReadImage1.SetActive(!ReadImage1.activeSelf);
-
+                    ChemicalBook = 1;
                 }
                 
                 else if (Input.GetKeyDown(KeyCode.H))
@@ -203,6 +233,8 @@ public class ItemGet : MonoBehaviour
             }
         }
     }
+
+   
 }
 
 

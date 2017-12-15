@@ -10,12 +10,25 @@ public class Button : MonoBehaviour {
     static int ClickCaunt = 0;
     static bool k = false;
     static bool i = false;
-    
+    static bool p = false;
+    static bool m = false;
+    static bool y = false;
+    static bool n = false;
+    public static int j = 0;
+    public static int X = 0;
+    public static int Z = 0;
+    public static int shelfkey = 0;
+    public GameObject Tennkey;
+    public GameObject SenntakuPaneru;
+    public GameObject GetImage;
+    public GameObject scrollRect;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+       
+
+    }
 
 
     public void OnButtonClick1()
@@ -29,6 +42,7 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            
         }
         
         else if (ClickCaunt== 1 )
@@ -56,6 +70,7 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字1");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            y = true;
         }
     }
 
@@ -110,6 +125,7 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字3");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            p = true;
         }
 
         else if (ClickCaunt == 1)
@@ -168,6 +184,7 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字4");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            n = true;
         }
 
         else if (ClickCaunt == 3)
@@ -320,6 +337,8 @@ public class Button : MonoBehaviour {
             screen1.GetComponent<Image>().sprite = Resources.Load<Sprite>("数字8");
             screen1.GetComponent<Image>().SetNativeSize();
             ClickCaunt++;
+            m = true;
+
         }
 
         else if (ClickCaunt == 2)
@@ -435,16 +454,53 @@ public class Button : MonoBehaviour {
             v.z -= 2.3f;
             Door.transform.localPosition = v;
             //count = false;
+            Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
+            Tennkey.SetActive(false);
+            j = 1;
         }
 
     }
+
+    public void OnButtonClick_ok2()
+    {
+
+        if (p == true && n == true && y == true && m == true)
+        {
+            GameObject Door = GameObject.Find("E1Door").gameObject;
+            Vector3 v = Door.transform.localPosition;
+            v.x -= 5;
+            Door.transform.localPosition = v;
+            Tennkey = GameObject.Find("Canvas").gameObject.transform.Find("Tennkey").gameObject;
+            Tennkey.SetActive(false);
+            Z = 1;
+        }
+
+    }
+
 
     public void OnButtonClick_cancel()
     {
         ClickCaunt = 0;
         k = false;
         i = false;
+
        
+    }
+
+    public void Yes()
+    {
+        shelfkey = 1;
+        SenntakuPaneru = GameObject.Find("Canvas").gameObject.transform.Find("SenntakuPaneru").gameObject;
+        SenntakuPaneru.SetActive(false);
+
+        scrollRect = GameObject.Find("Canvas").gameObject.transform.Find("ItemRisuto").gameObject;
+        scrollRect.SetActive(false);
+
+        GetImage = GameObject.Find("Canvas").gameObject.transform.Find("GetImage").gameObject;
+        GetImage.SetActive(true);
+
+        X = 1;
+        
     }
 
     // Update is called once per frame
